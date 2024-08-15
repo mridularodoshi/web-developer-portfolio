@@ -1,5 +1,4 @@
-
-
+/*copied CSS class code from google fonts*/
 .open-sans-normal {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -7,83 +6,176 @@
     font-variation-settings:
         "wdth" 100;
 }
+
 /*shared styles*/
-.text-primary{
-    color: #FD6E0A;
-}
-.dark-2{
-    color: #474747;
-}
-.dark-3{
-    color: #757575;
-}
-/*header*/
-.header{
-    background-image: url(../images/developer.png), url(../images/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-}
-/*nav styles*/
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 50px 200px;
+
+.orange {
+    color: rgb(253, 110, 10);
 }
 
-.nav-title{
-    font-weight:800px;
-    font-size: 45px;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-
-}
-nav ul li{
-    list-style: none;
-    margin-right: 50px;
-}
-nav li a{
-    text-decoration: none;
-    font-size: 20px;
+.dark-1 {
+    color: rgb(24, 24, 24);
 }
 
-.btn{
+.dark-2 {
+    color: rgb(71, 71, 71);
+}
+
+.dark-3 {
+    color: rgb(117, 117, 117);
+
+}
+
+.white-color {
+    color: rgb(255, 255, 255);
+}
+
+.btn {
     color: #FFFFFF;
-    background-color: #FD6E0A ;
+    background-color: #FD6E0A;
     font-weight: bold;
-    font-size:20px ;
+    font-size: 20px;
     padding: 18px 35px;
 
     border-radius: 5px;
     border: none;
 }
+
+.section-title {
+    color: rgb(24, 24, 24);
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.section-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*nav styles*/
+
+/*Parent: nav, 2 kids: h3 & ul*/
+nav {
+    display: flex;
+    align-items: center;
+    /*vertically center*/
+    justify-content: space-between;
+    /*creating space in between*/
+    margin: 51px 226px;
+}
+
+/*parent: ul , 3 kids: 3 li or a */
+nav ul {
+    display: flex;
+    align-items: center;
+    /*vertically center*/
+
+}
+
+/*h3: Mary*/
+.nav-title {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+/* ul : portfolio, blog, hire me button*/
+nav ul li {
+    list-style: none;
+    /*to remove dots from li*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    /*to remove underline from a*/
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 51px;
+
+}
+
 /*banner styles*/
-.banner{
+
+/*parent:div(banner), 2 kids:div(banner-content) & img(banner-dp) */
+.banner {
     display: flex;
     justify-content: space-between;
-    margin:0 20px 0 200px;
+    /*creating space in between*/
+    margin: 0 38px 0 232px;
 }
-.banner-content{
-    max-width: 580px;
 
+.banner-content {
+    max-width: 587px;
 }
-.banner-greet{
-    font-weight:600px;
+
+.banner-dp {
+    width: 584px;
+    height: 676px;
+}
+
+.banner-greet {
+    font-weight: 600px;
     font-size: 45px;
-
+    margin-bottom: 5px;
 }
-.banner-title{
-    font-weight:800px;
+
+.banner-title {
+    font-weight: 800px;
     font-size: 85px;
-
+    margin-bottom: 20px;
 }
-.banner-description{
+
+.banner-description {
+    font-weight: 400;
     font-size: 18px;
 }
 
-.banner-dp{
-    width: 584px;
-    height: 676px;
+/*header*/
+
+/*parent: header, 2 kids: nav & div(banner)*/
+.header {
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 248, 243);
+}
+/*main section styles*/
+main{
+    max-width: 1140px;
+    margin:0 auto; /* center*/
+}
+
+/*About section styles*/
+.about{
+    border-radius: 10px;
+    background: rgb(255, 248, 243);
+    padding: 130px 150px;
+    text-align: center;
+    margin-top: 130px;
+}
+.about-items{
+    display: flex;
+    justify-content: space-around;
+
+}
+.item-title{
+  font-weight:400 ;
+  font-size:20px ;
+  color: rgb(117, 117, 117);
+
+}
+.item-description{
+  font-weight:700 ;
+  font-size:20px ;
+  color: rgb(71, 71, 71);
+
+}
+.about-descrip{
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }

@@ -2,40 +2,92 @@
 <html lang="en">
 
 <head>
+    <!--meta tag for SEO, title tag for website's tab, favicon-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
+    <link rel="shortcut icon" href="images/icons/devicon.png" type="image/x-icon">
+
+    <!--Linking font from google fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="Styles/portfolio.css">
+    <!--/*linking .css file using link tag-->
+    <link rel="stylesheet" href="Styles/portfolio.css"> 
+
+
 </head>
 
+<!--added the font to the full body-->
 <body class="open-sans-normal">
     <header class="header">
         <nav>
-            <h3 class="nav-title">Ma<span class="text-primary">r</span>y</h3>
+            <h3 class="nav-title">Ma<span class="orange">r</span>y</h3>
             <ul>
                 <li><a class="dark-2" href="">Portfolio</a></li>
                 <li><a class="dark-2" href="">Blog</a></li>
+
                 <li><a href=""><Button class="btn">Hire me</Button></a></li>
             </ul>
         </nav>
         <div class="banner">
             <div class="banner-content">
                 <h3 class="banner-greet dark-2" >Hi, I am</h3>
-                <h1 class="banner-title">Mary Hardy</h1>
+                <h1 class="banner-title dark-1">Mary Hardy</h1>
                 <p class="banner-description dark-3">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
                 <button class="btn">Download CV</button>
-                <button class="btn">Contact</button>
+                <button class="btn" style="background-color: ;">Contact</button>
             </div>
             <img src="images/hardy.png" alt="" class="banner-dp">
         </div>
     </header>
 
     <main>
+        <section class="about">
+        <div class="about-descrip">
+            <h3 class="section-tile">About Me</h3>
+            <p class="section-description">I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.</p>
+            <div class="about-items">
+                <!--.about-item*4>p.item-title+p.item-description-->
+                <div class="about-item">
+                    <p class="item-title">Name:</p>
+                    <p class="item-description">Mary Hardy</p>
+                </div>
+                <div class="about-item">
+                    <p class="item-title">Email:</p>
+                    <p class="item-description">info@gmail.com</p>
+                </div>
+                <div class="about-item">
+                    <p class="item-title">Date of birth:</p>
+                    <p class="item-description">11 November 1987</p>
+                </div>
+                <div class="about-item">
+                    <p class="item-title">From:</p>
+                    <p class="item-description">Los Angeles, USA</p>
+                </div>
+               
+            </div>
+        </div>
+
+
+
+        </section>
+        <section class="do">
+            <h3 class="section-tile">What I do</h3>
+            
+
+
+
+        </section>
+        <section class="summary">
+            <h3 class="section-tile">A summary of My Resume</h3>
+
+
+
+        </section>
 
     </main>
 
