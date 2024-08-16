@@ -45,6 +45,20 @@ main{
     border-radius: 5px;
     border: none;
 }
+.btn2{
+    color: rgb(253, 110, 10);
+    background-color: rgb(255, 248, 243);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px 35px;
+    border: 1px solid rgb(253, 110, 10);
+    border-radius: 5px;
+
+}
+.btn-container{
+    display: flex;
+    gap: 30px;
+}
 
 .section-title {
     color: rgb(24, 24, 24);
