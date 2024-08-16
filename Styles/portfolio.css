@@ -220,6 +220,9 @@ nav ul li a {
     gap: 24px;
 
 }
+.resume-col{
+    width: 50%;
+}
 .col-title{
     font-weight: 700;
   font-size:30px;
@@ -249,4 +252,32 @@ border: 1px solid rgb(209, 209, 209);
 .down-cv{
     text-align: center;
     margin-top: 50px;
+}
+
+/*footer section Styles*/
+.foot{
+    background-color: rgb(255, 248, 243);
+    display: flex;
+    gap: 117px;
+    margin-top: 130px;
+    padding: 130px 230px;
+
+}
+.foot-des{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+}
+.foot-col{
+    width: 50%;
+}
+footer input[type="text"], input[type="email"], textarea{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 255, 255);
+    padding: 18px 30px;
+    margin-bottom: 24px;
+
 }
