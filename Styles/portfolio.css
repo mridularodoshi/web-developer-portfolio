@@ -143,8 +143,8 @@ nav ul li a {
 }
 
 .banner-dp {
-    width: 584px;
-    height: 676px;
+    width: 100%;
+    height: 100%;
 }
 
 .banner-greet {
@@ -333,12 +333,29 @@ footer textarea {
 }
 
 @media screen and (max-width:576px) {
-    .skills-container,.resume-container,.foot {
+
+    .skills-container,
+    .resume-container,
+    .foot,
+    .about-items,
+    .banner,
+    nav,
+    nav>ul,
+    .btn-container {
         flex-direction: column;
     }
 
-    .foot{
+    .header {
+        background-image: none;
+    }
+
+    .foot,
+    .about {
         padding: 20px;
+    }
+
+    .banner {
+        margin: 20px;
     }
 
     .foot-col {
