@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /*copied CSS class code from google fonts*/
 .open-sans-normal {
     font-family: "Open Sans", sans-serif;
@@ -6,10 +12,12 @@
     font-variation-settings:
         "wdth" 100;
 }
+
 /*main section styles*/
-main{
+main {
     max-width: 1140px;
-    margin:0 auto; /* center*/
+    margin: 0 auto;
+    /* center*/
 }
 
 /*shared styles*/
@@ -45,7 +53,8 @@ main{
     border-radius: 5px;
     border: none;
 }
-.btn2{
+
+.btn2 {
     color: rgb(253, 110, 10);
     background-color: rgb(255, 248, 243);
     font-weight: bold;
@@ -55,7 +64,8 @@ main{
     border-radius: 5px;
 
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     gap: 30px;
 }
@@ -166,7 +176,7 @@ nav ul li a {
 
 
 /*About section styles*/
-.about{
+.about {
     border-radius: 10px;
     background: rgb(255, 248, 243);
     text-align: center;
@@ -174,102 +184,118 @@ nav ul li a {
     padding: 130px 150px;
 
 }
-.about-items{
+
+.about-items {
     display: flex;
     justify-content: space-around;
 
 }
-.item-title{
-  font-weight:400 ;
-  font-size:20px ;
-  color: rgb(117, 117, 117);
+
+.item-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(117, 117, 117);
 
 }
-.item-description{
-  font-weight:700 ;
-  font-size:20px ;
-  color: rgb(71, 71, 71);
+
+.item-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
 
 }
-.about-descrip{
+
+.about-descrip {
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0);
     background: rgb(255, 255, 255);
-   
+
 }
+
 /*Skills section styles*/
-.skills{
+.skills {
     margin-top: 130px;
 }
-.skills-container{
+
+.skills-container {
     display: flex;
     text-align: left;
     gap: 24px;
 }
 
-.skill{
+.skill {
     border-radius: 5px;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
     background: rgb(255, 255, 255);
     padding: 30px;
-    
+
 }
-.skill-title{
+
+.skill-title {
     color: rgb(24, 24, 24);
     font-size: 20px;
     font-weight: 700;
 }
-.skill-descrip{
+
+.skill-descrip {
     color: rgb(117, 117, 117);
     font-size: 16px;
     font-weight: 400;
 }
 
 /*Resume Section Styles*/
-.resume{
+.resume {
     margin-top: 130px;
 }
-.resume-container{
+
+.resume-container {
     display: flex;
     gap: 24px;
 
 }
-.resume-col{
+
+.resume-col {
     width: 50%;
 }
-.col-title{
+
+.col-title {
     font-weight: 700;
-  font-size:30px;
-    color:rgb(71, 71, 71);
+    font-size: 30px;
+    color: rgb(71, 71, 71);
 }
-.exp-title{
+
+.exp-title {
     font-weight: 700;
-    font-size:25px;
-    color:rgb(71, 71, 71);
+    font-size: 25px;
+    color: rgb(71, 71, 71);
 }
-.exp-subtitle{
+
+.exp-subtitle {
     font-weight: 600;
-    font-size:20px;
-    color:rgb(117, 117, 117);
+    font-size: 20px;
+    color: rgb(117, 117, 117);
 
 }
-.exp-descrip{
+
+.exp-descrip {
     font-weight: 400;
-    font-size:16px;
-    color:rgb(117, 117, 117);
+    font-size: 16px;
+    color: rgb(117, 117, 117);
 
 }
-.resume hr{
-border: 1px solid rgb(209, 209, 209);
+
+.resume hr {
+    border: 1px solid rgb(209, 209, 209);
 
 }
-.down-cv{
+
+.down-cv {
     text-align: center;
     margin-top: 50px;
 }
 
 /*footer section Styles*/
-.foot{
+.foot {
     background-color: rgb(255, 248, 243);
     display: flex;
     gap: 117px;
@@ -277,15 +303,20 @@ border: 1px solid rgb(209, 209, 209);
     padding: 130px 230px;
 
 }
-.foot-des{
+
+.foot-des {
     font-size: 16px;
     font-weight: 400;
     color: rgb(71, 71, 71);
 }
-.foot-col{
+
+.foot-col {
     width: 50%;
 }
-footer input[type="text"], input[type="email"], textarea{
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
     display: block;
     width: 100%;
     border-radius: 5px;
@@ -294,4 +325,29 @@ footer input[type="text"], input[type="email"], textarea{
     padding: 18px 30px;
     margin-bottom: 24px;
 
+}
+
+/*responsive media query*/
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-container,.resume-container,.foot {
+        flex-direction: column;
+    }
+
+    .foot{
+        padding: 20px;
+    }
+
+    .foot-col {
+        width: 100%;
+    }
+
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        width: calc(100% - 40px);
+    }
 }
